@@ -1,4 +1,4 @@
-﻿namespace FirstSteps
+﻿namespace FirstSteps.entity.player
 {
     public class BlueMagician : Magician
     {

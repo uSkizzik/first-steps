@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace FirstSteps
+namespace FirstSteps.entity.player
 {
-    public abstract class Magician : BaseFighter
+    public abstract class Magician : LivingEntity
     {
         private Random _random = new Random();
 

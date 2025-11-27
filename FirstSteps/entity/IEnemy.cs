@@ -1,6 +1,6 @@
-﻿namespace FirstSteps
+﻿namespace FirstSteps.entity
 {
-    public interface IFighter
+    public interface IEnemy
     {
         bool IsAlive { get; }
 

@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using FirstSteps.entity;
+using FirstSteps.entity.player;
 
 namespace FirstSteps
 {
@@ -26,7 +26,7 @@ namespace FirstSteps
             {
                 Console.Clear();
 
-                BaseFighter enemy = FindEnemyForTheRound(hero.Level);
+                LivingEntity enemy = FindEnemyForTheRound(hero.Level);
 
                 Console.WriteLine("Your enemy for the next fight is:");
                 enemy.DisplayObject();
@@ -99,9 +99,9 @@ namespace FirstSteps
             return result;
         }
 
-        private static BaseFighter FindEnemyForTheRound(int level)
+        private static LivingEntity FindEnemyForTheRound(int level)
         {
-            BaseFighter result;
+            LivingEntity result;
 
             Random random = new Random();
 

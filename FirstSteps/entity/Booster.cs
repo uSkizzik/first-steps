@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstSteps
+namespace FirstSteps.entity
 {
-    public class Booster : BaseDisplayableUnit
+    public enum BoosterTypes
+    {
+        Healing = 1,
+        Armor = 2,
+        Energy = 3
+    }
+    
+    public class Booster : Entity
     {
         public Booster(BoosterTypes type, int level)
         {

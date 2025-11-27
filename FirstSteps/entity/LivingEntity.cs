@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace FirstSteps
+namespace FirstSteps.entity
 {
-    public abstract class BaseFighter : BaseDisplayableUnit, IFighter
+    public abstract class LivingEntity : Entity, IEnemy
     {
         public bool IsAlive { get; protected set; } = true;
         public int Blood { get; protected set; }

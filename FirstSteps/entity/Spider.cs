@@ -1,4 +1,4 @@
-﻿namespace FirstSteps
+﻿namespace FirstSteps.entity
 {
     public class Spider : Creature
     {

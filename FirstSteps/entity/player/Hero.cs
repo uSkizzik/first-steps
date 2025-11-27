@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FirstSteps
+namespace FirstSteps.entity.player
 {
-    public class Hero : BaseFighter
+    public class Hero : LivingEntity
     {
         private string _fighterName;
         public Hero(string fighterName)
@@ -27,7 +27,7 @@ namespace FirstSteps
 
         public List<Booster> AvailableBoosters { get; private set; } = new List<Booster>();
 
-        public void Fight(IFighter enemyFighter, Booster booster)
+        public void Fight(IEnemy enemyFighter, Booster booster)
         {
             if (booster != null)
             {

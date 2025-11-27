@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace FirstSteps
+namespace FirstSteps.entity
 {
-    public abstract class BaseDisplayableUnit
+    public abstract class Entity
     {
         public abstract void DisplayObject();
 
